@@ -23,7 +23,7 @@ const ProductsTable = ({
       title: "Description",
       dataIndex: "description",
       key: "description",
-      width: 500,
+      width: 400,
     },
     {
       title: "Price",
@@ -85,10 +85,13 @@ const ProductsTable = ({
           currentPage * pageSize
         )}
         pagination={false}
-        scroll={{ x: screens.lg ? 500 : "max-content", y: !screens.lg ? 600 : "max-content" }}
+        scroll={{
+          x: screens.lg ? 500 : "max-content",
+          y: !screens.lg ? 600 : "max-content",
+        }}
       />
     </div>
   );
 };
 
-export default ProductsTable; 
+export default ProductsTable;
